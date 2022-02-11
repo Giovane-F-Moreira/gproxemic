@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+
+body { 
+ 
+  background-image: linear-gradient(45deg, #084177, #687466, #cd8d7b, #fbc498);
+  
+
+  background: linear-gradient(45deg,#084177, #687466, #cd8d7b, #fbc498, 100%, transparent 0%);
+  background-attachment: fixed;
+  
+}
+
+#mapid {
+  margin-left: 100px;
+  background-image: url(https://files.tecnoblog.net/wp-content/uploads/2013/05/google-maps-rotas.jpg);  
+  border-radius: 50%;
+  height: 400px; 
+  width: 400px;
 }
