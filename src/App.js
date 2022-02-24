@@ -1,12 +1,15 @@
 import React from 'react';
+import './App.css';
+
+//Components
 import Navbar from './components/Navbar';
 import Logo from './components/LogoGproxemic';
 import Automatic from './components/Automatic';
-import Input from './components/Input';
 import Description from './components/Description';
 import Token from './components/Token';
-import ButtonSearch from './components/ButtonSearch';
 import Arquiteture from './components/Arquiteture';
+import Footer from './components/Footer';
+import Form from './components/Form';
 
 const App = () => {
   return (
@@ -24,27 +27,23 @@ const App = () => {
           <Automatic /> 
           <Description />
           <Token />
-          <Input placeholder='Longitude' />
-          <Input placeholder='Latitude' /> <br />
-          <div className="row">
-            <div className="col-5"></div>
-            <div className="col-2"><ButtonSearch /></div>      
-          </div><br />
+          <Form />
           <div className="row">
             <div className="col-3"></div>
             <div className="col-9">
-              <span>Exemple Coordinates: </span><br />
-              <span>New York('Office')= -73.989 , 40.733</span><br />
-              <span>Berkeley('Shop')= -122.2727469 , 37.8715926</span>
+              <p className='description'>
+                Exemple Coordinates: <br/>
+                New York('Office')= -73.989 , 40.733 <br/>
+                Berkeley('Shop')= -122.2727469 , 37.8715926
+              </p>
             </div>
           </div>
           
         </div>
-        <div className="col-sm-1"></div>
+        <div className="col-sm-1"></div></div><br /><br />
 
-      </div>
-      {/* <Arquiteture /> */}
-      <br /><br /><br />
+      <Arquiteture /><br /><br /><br />
+      <Footer/>
     </>
   );
 }
